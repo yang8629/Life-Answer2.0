@@ -266,7 +266,8 @@ body {
 }
 .r_area .btn_start {
   width: 40%;
-  height: 54px;
+  height: 58px;
+  min-width: 130px;
   font-size: 25px;
   background-color: white;
   border: #dee2e6 1px solid;
