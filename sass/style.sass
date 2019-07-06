@@ -95,7 +95,7 @@ body
     margin-left: 50%
     bottom: -800px
     overflow: hidden
-    transition: 0.5s ease
+    transition: 0.5s cubic-bezier(.60,0,.30,1)
     justify-items: center
     align-items: center
     +border-radius(10px)
@@ -167,7 +167,7 @@ body
     justify-items: center
     align-items: center
     z-index: 1
-    transition: 0.5s ease
+    transition: 0.5s cubic-bezier(.60,0,.30,1)
     &.active
         top: 0
     .answer
@@ -197,8 +197,5 @@ body
             &:hover
                 background-color: map-get($bg, color)
                 color: map-get($bg, bg)
-
-
-
 
 @import layout
