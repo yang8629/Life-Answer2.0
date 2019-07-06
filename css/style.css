@@ -281,7 +281,8 @@ body {
 .r_area .btn_start h3 {
   font-weight: 600;
 }
-.r_area .q_card {
+
+.q_card {
   position: fixed;
   display: grid;
   grid-template-columns: 100%;
@@ -292,7 +293,7 @@ body {
   background-position: -200px 0px;
   background-size: 340%;
   background-repeat: no-repeat;
-  margin-left: 50px;
+  margin-left: 50%;
   bottom: -800px;
   overflow: hidden;
   transition: 0.5s ease;
@@ -301,41 +302,42 @@ body {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
 }
-.r_area .q_card.active {
+.q_card.active {
   bottom: 20px;
 }
-.r_area .q_card .title_card {
+.q_card .title_card {
   align-self: end;
 }
-.r_area .q_card .title_card h3 {
+.q_card .title_card h3 {
   font-size: 80px;
   font-weight: 500;
   color: white;
 }
-.r_area .q_card .q_input {
+.q_card .q_input {
   text-align: left;
   line-height: 3;
   font-weight: 500;
 }
-.r_area .q_card .q_input label {
+.q_card .q_input label {
+  font-weight: 600;
   font-size: 20px;
   color: white;
 }
-.r_area .q_card .q_input input {
+.q_card .q_input input {
   height: 40px;
   font-size: 18px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-.r_area .q_card .q_input .dowhat {
+.q_card .q_input .dowhat {
   margin-top: 20px;
 }
-.r_area .q_card .bottom_card {
+.q_card .bottom_card {
   display: grid;
   width: 100%;
   height: 100%;
@@ -344,33 +346,34 @@ body {
   justify-items: center;
   align-items: center;
 }
-.r_area .q_card .bottom_card .btn_bottom {
+.q_card .bottom_card .btn_bottom {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  width: 60%;
-  height: 35%;
+  width: 45%;
+  height: 30%;
 }
-.r_area .q_card .bottom_card .btn_bottom button {
-  width: 80%;
+.q_card .bottom_card .btn_bottom button {
+  width: 100%;
   height: 100%;
 }
-.r_area .q_card .bottom_card .btn_bottom button p {
+.q_card .bottom_card .btn_bottom button p {
+  font-weight: 600;
   font-size: 20px;
 }
-.r_area .q_card .bottom_card .btn_bottom .btn_cancel {
+.q_card .bottom_card .btn_bottom .btn_cancel {
   background-color: white;
   color: #335A63;
 }
-.r_area .q_card .bottom_card .btn_bottom .btn_cancel:hover {
+.q_card .bottom_card .btn_bottom .btn_cancel:hover {
   background-color: #335A63;
   color: white;
 }
-.r_area .q_card .bottom_card .btn_bottom .btn_confirm {
+.q_card .bottom_card .btn_bottom .btn_confirm {
   background-color: #7C9640;
   color: white;
 }
-.r_area .q_card .bottom_card .btn_bottom .btn_confirm:hover {
+.q_card .bottom_card .btn_bottom .btn_confirm:hover {
   background-color: white;
   color: #7C9640;
 }

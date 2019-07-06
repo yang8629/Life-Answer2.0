@@ -81,75 +81,77 @@ body
             color: map-get($bg, bg)
         h3
             font-weight: 600
-    .q_card
-        position: fixed
+.q_card
+    position: fixed
+    display: grid
+    grid-template-columns: 100%
+    grid-auto-rows: auto
+    width: 600px
+    height: 700px
+    background: url("../img/bg.jpg")
+    background-position: -200px 0px
+    background-size: 340%
+    background-repeat: no-repeat 
+    margin-left: 50%
+    bottom: -800px
+    overflow: hidden
+    transition: 0.5s ease
+    justify-items: center
+    align-items: center
+    +border-radius(10px)
+    +box-shadow(10px 10px 10px 0px rgba(0,0,0,0.75))
+    &.active
+        bottom: 20px
+    .title_card
+        align-self: end
+        h3
+            font-size: 80px
+            font-weight: 500
+            color: white
+    .q_input
+        text-align: left
+        line-height: 3
+        font-weight: 500
+        label
+            font-weight: 600
+            font-size: 20px
+            color: white
+        input
+            height: 40px
+            font-size: 18px
+            +border-radius(10px)
+        .dowhat
+            margin-top: 20px
+    .bottom_card
         display: grid
-        grid-template-columns: 100%
+        width: 100%
+        height: 100%
+        grid-template-columns: 50% 50%
         grid-auto-rows: auto
-        width: 600px
-        height: 700px
-        background: url("../img/bg.jpg")
-        background-position: -200px 0px
-        background-size: 340%
-        background-repeat: no-repeat 
-        margin-left: 50px
-        bottom: -800px
-        overflow: hidden
-        transition: 0.5s ease
         justify-items: center
         align-items: center
-        +border-radius(10px)
-        +box-shadow(10px 10px 20px 0px rgba(0,0,0,0.75))
-        &.active
-            bottom: 20px
-        .title_card
-            align-self: end
-            h3
-                font-size: 80px
-                font-weight: 500
-                color: white
-        .q_input
-            text-align: left
-            line-height: 3
-            font-weight: 500
-            label
-                font-size: 20px
-                color: white
-            input
-                height: 40px
-                font-size: 18px
-                +border-radius(10px)
-            .dowhat
-                margin-top: 20px
-        .bottom_card
-            display: grid
-            width: 100%
-            height: 100%
-            grid-template-columns: 50% 50%
-            grid-auto-rows: auto
-            justify-items: center
-            align-items: center
-            .btn_bottom
-                +border-radius(10px)
-                width: 60%
-                height: 35%
-                button
-                    width: 80%
-                    height: 100%
-                    p
-                        font-size: 20px
-                .btn_cancel
-                    background-color: map-get($bg, bg)
-                    color: map-get($bg, color)
-                    &:hover
-                        background-color: map-get($bg, color)
-                        color: map-get($bg, bg)
-                .btn_confirm
-                    background-color: #7C9640
+        .btn_bottom
+            +border-radius(10px)
+            width: 45%
+            height: 30%
+            button
+                width: 100%
+                height: 100%
+                p
+                    font-weight: 600
+                    font-size: 20px
+            .btn_cancel
+                background-color: map-get($bg, bg)
+                color: map-get($bg, color)
+                &:hover
+                    background-color: map-get($bg, color)
                     color: map-get($bg, bg)
-                    &:hover
-                        background-color: map-get($bg, bg)
-                        color: #7C9640
+            .btn_confirm
+                background-color: #7C9640
+                color: map-get($bg, bg)
+                &:hover
+                    background-color: map-get($bg, bg)
+                    color: #7C9640
             
 .ans_card
     display: grid
