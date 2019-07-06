@@ -6,6 +6,10 @@
     white-space: nowrap
     text-indent: 100%
     overflow: hidden
+@mixin block-center
+    display: flex
+    align-items: center
+    justify-content: center
 @mixin rwd($wide)
     @if $wide == pc
         @media only screen and (max-width: 768px)

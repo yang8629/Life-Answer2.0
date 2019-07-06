@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/5f90e1fbea.js"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="intro">
-            <img src="img/intro.png" alt="">
+            <p>這是一本解答人生問題之書，</p>
+            <p>你唯一需要做的就是提出問題，</p>
+            <p>自然就會出現你需要的答案。</p>
         </div>
         <div class="r_area">
             <div class="title">
@@ -24,10 +25,10 @@
             <div class="hint">
                 <img src="img/hint.png" alt="">
             </div>
-            <button type="button" class="btn_start btn border toggle-btn" onclick="toggleCard()">
+            <button type="button" class="btn_start btn toggle-btn" onclick="toggleCard()">
                 <h3>隨機產生</h3>
             </button>
-            <button type="button" class="btn_start btn border toggle-btn" id="btn-answer">
+            <button type="button" class="btn_start btn toggle-btn" id="btn-answer">
                 <h3>取得開示</h3>
             </button>
 
@@ -58,26 +59,29 @@
                         </button>
                     </div>
                     <div class="btn_bottom">
-                        <button type="button" class="btn_confirm btn border-0 toggle-btn" id="btn-send">
+                        <button type="button" class="btn_confirm btn toggle-btn" id="btn-send">
                             <p>確定</p>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-    
 
-        <div class="ans_card">
-                <div class="answer">
-                    <p id="answer"></p>
-                </div>
-                <div class="btn_answer">
-                    <button type="button" class="btn_again btn border-0 toggle-btn" onclick="toggleAnswer()">
-                        <h4>繼續提問</h4>
-                    </button>
-                </div>
+
+        <div class="ans_card" id="ans_card">
+            <div class="answer">
+                <p id="answer"></p>
+            </div>
+            <div class="btn_answer">
+                <button type="button" class="btn" onclick="again()">
+                    <p>再來一次</p>
+                </button>
+                <button type="button" class="btn" onclick="toggleAnswer()">
+                    <p>繼續提問</p>
+                </button>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Optional JavaScript -->
