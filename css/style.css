@@ -288,7 +288,7 @@ body {
   grid-template-columns: 100%;
   grid-auto-rows: auto;
   width: 600px;
-  height: 700px;
+  height: 95%;
   background: url("../img/bg.jpg");
   background-position: -200px 0px;
   background-size: 340%;
@@ -307,7 +307,7 @@ body {
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
 }
 .q_card.active {
-  bottom: 20px;
+  bottom: 25px;
 }
 .q_card .title_card {
   align-self: end;
@@ -347,13 +347,13 @@ body {
   align-items: center;
 }
 .q_card .bottom_card .btn_bottom {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
   width: 45%;
   height: 30%;
 }
 .q_card .bottom_card .btn_bottom button {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
 }
