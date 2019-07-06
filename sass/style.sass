@@ -1,0 +1,227 @@
+$width : 960px
+$height : 760px
+$bg:(bg: white, color: #335A63)
+@import reset
+@import compass/css3
+@import mixin
+
+
+body
+    background: url("../img/bg.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    font-family: "Microsoft JhengHei"
+
+.container-fluid
+    display: grid
+    grid-template-columns: 44% 54%
+    grid-template-rows: $height
+    grid-column-gap: 2%
+    justify-content: space-between
+    align-items: center
+    justify-items: center
+    padding: 0
+    margin: 0
+
+.intro
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+        width: 70%
+        height: 70%
+        min-width: 250px
+        min-height: 65px
+
+.r_area
+    height: 100%
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 40% 10% 10% 10% auto
+    justify-items: center
+    align-items: center
+    text-align: center
+    .title
+        align-self: end
+        img
+            margin-left: -10px
+            //margin-bottom: 20px
+            width: 50%
+            height: 50%
+            min-width: 225px
+            min-height: 53px
+    .hint
+        align-self: start
+        img
+            margin-top: 20px
+            width: 70%
+            height: 70%
+            min-width: 270px
+            min-height: 13px
+    .btn_start
+        width: 40%
+        height: 54px
+        font-size: 25px
+        background-color: map-get($bg, bg)
+        color: map-get($bg, color)
+        align-self: end
+        &:hover
+            background-color: map-get($bg, color)
+            color: map-get($bg, bg)
+        h3
+            font-weight: 600
+    .q_card
+        position: fixed
+        display: grid
+        grid-template-columns: 100%
+        grid-auto-rows: auto
+        width: 600px
+        height: 700px
+        background: url("../img/bg.jpg")
+        background-position: -200px 0px
+        background-size: 340%
+        background-repeat: no-repeat 
+        margin-left: 50px
+        bottom: -800px
+        overflow: hidden
+        transition: 0.5s ease
+        justify-items: center
+        align-items: center
+        +border-radius(10px)
+        +box-shadow(10px 10px 20px 0px rgba(0,0,0,0.75))
+        &.active
+            bottom: 20px
+        .title_card
+            align-self: end
+            h3
+                font-size: 80px
+                font-weight: 500
+                color: white
+        .q_input
+            text-align: left
+            line-height: 3
+            font-weight: 500
+            label
+                font-size: 20px
+                color: white
+            input
+                height: 40px
+                font-size: 18px
+                +border-radius(10px)
+            .dowhat
+                margin-top: 20px
+        .bottom_card
+            display: grid
+            width: 100%
+            height: 100%
+            grid-template-columns: 50% 50%
+            grid-auto-rows: auto
+            justify-items: center
+            align-items: center
+            .btn_bottom
+                +border-radius(10px)
+                width: 60%
+                height: 35%
+                button
+                    width: 80%
+                    height: 100%
+                    p
+                        font-size: 20px
+                .btn_cancel
+                    background-color: map-get($bg, bg)
+                    color: map-get($bg, color)
+                    &:hover
+                        background-color: map-get($bg, color)
+                        color: map-get($bg, bg)
+                .btn_confirm
+                    background-color: #7C9640
+                    color: map-get($bg, bg)
+                    &:hover
+                        background-color: map-get($bg, bg)
+                        color: #7C9640
+            
+.ans_card
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 90% 10%
+    position: fixed
+    width: 100%
+    height: $height
+    background-color: map-get($bg, bg)
+    color: map-get($bg, color)
+    text-align: center
+
+            
+
+        // .bg_card
+        //     display: block
+        //     width: 340%
+        //     margin-left: -200px
+        //     z-index: -999
+            
+    
+
+// #q_card
+//     position: fixed
+//     width: 600px
+//     height: 700px
+//     bottom: -800px
+//     background: map-get($bg,bg)
+//     +border-radius(10px)
+
+    
+
+
+
+
+.header
+    +border-radius(50px)
+    +opacity(0.2)
+    +box-shadow(3px 3px 5px #000)
+    background: gray
+    height: 100px
+    width: auto
+    h1
+        padding: 20px 0 0 20px
+        a
+            display: none
+            +text-hide
+    .code
+        margin-left: 100px
+
+.main
+    display: inline-grid
+    grid-template-columns: 10% 80% 10%
+    margin-top: 40px
+    text-align: center
+
+.grid
+    display: grid
+    grid-template-columns: repeat(5, 15%)
+    grid-template-rows: repeat(6, 100px) auto
+    grid-auto-flow: row dense
+    
+    gap: 20px 20px
+    justify-content: space-between
+    justify-items: center
+    align-items: center
+
+.box
+    width: 95%
+    height: 95%
+    font-size: 20px
+    +border-radius(20px)
+    p
+        margin-top: 40px
+
+.box1
+    grid-column: 1 / 3
+    grid-row: 1 / 2
+
+.box2
+    grid-column-end: span 4
+    grid-row-end: span 3
+
+@import layout

@@ -1,0 +1,226 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.intro{
+    position: relative;
+    height: 821px;
+    width: 652px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -170px;
+}
+.intro img{
+    width: 376px;
+    height: 94.2px;
+}
+.r_area{
+    position: relative;
+    height: 821px;
+    width: 793px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: -170px;
+}
+.title img{
+    width: 414.96px;
+    height: 98px;
+    margin-top: 0px;
+}
+.hint img{
+    width: 407px;
+    height: 19px;
+    margin-top: 35px;
+}
+.btn_start{
+    font-size: 26px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 54px;
+    margin: 10px;
+    margin-top: 60px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #335A63;
+}
+.btn_start:hover{
+    background-color: #335A63;
+    color: #ffffff;
+}
+
+
+
+#q_card{
+    position: fixed;
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    background: #335A63;
+    bottom: -800px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+    transition: .5s ease;
+}
+#q_card.active{
+    bottom: 50px;
+}
+#q_card .toggle-btn{
+    position: absolute;
+}
+#q_card .toggle-btn span{
+    display: block;
+}
+#q_card .title_card{
+    position: absolute;
+    width: 293.4756px;
+    height: 73.59px;
+    margin: 40px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+#q_card .bg_card{
+    display: block;
+    margin-left: -200px;
+    width: 340%;
+    z-index: -999;
+}
+#q_card .q_input{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    margin-top: 260px;
+}
+.q_input label{
+    font-size: 18px;
+    color: #ffffff;
+}
+.q_input .f_who{
+    width: 200px;
+    height: 54px;
+    border-radius: 10px;
+}
+.q_input .l_where{
+    margin-left: 10px;
+}
+.q_input .f_where{
+    width: 200px;
+    height: 54px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.q_input .l_dowhat{
+    margin-top: 20px;
+}
+.q_input .f_dowhat{
+    width: 430px;
+    height: 54px;
+    border-radius: 10px;
+}
+
+#q_card .btn_card{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 550px;
+    z-index: 1;
+}
+
+#q_card .btn_cancel{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 54px;
+    margin: 30px;
+    left: 50px;
+    padding-top: 10px;
+    border-radius: 10px;
+    color: #335A63;
+    background-color: #ffffff;
+}
+#q_card .btn_cancel:hover{
+    color: #ffffff;
+    background-color: #335A63;
+}
+#q_card .btn_enter{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 54px;
+    margin: 30px;
+    margin-left: 140px;
+    padding-top: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #7C9640;
+}
+#q_card .btn_enter:hover{
+    color: #7C9640;
+    background-color: #ffffff;
+}
+
+#ans_card{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 43, 37, 0.85);
+    left: 0;
+    top: -100%;
+    z-index: 1;
+    transition: .5s ease;
+}
+#ans_card.active{
+    top: 0;
+}
+#ans_card p{
+    font-size: 22px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+    color: rgb(255, 255, 255);
+}
+#ans_card .btn_again{
+    letter-spacing: 5px;
+    width: 180px;
+    height: 46px;
+    padding-top: 10px;
+    margin: 10px;
+    margin-top: 250px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #335A63;
+}
+.answer{
+  display: flex;
+  justify-content: center;
+}
+#ans_card .btn_again:hover{
+    background-color: #335A63;
+    color: #ffffff;
+}
