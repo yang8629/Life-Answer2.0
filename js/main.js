@@ -14,15 +14,15 @@ function Clear() {
 
 $(document).ready(function() {
     $("#btn-send").click(function(event) {
+        type = 'read';
         save();
     });
     $("#btn-read").click(function(event) {
-        type = 'read';
         read();
     });
     $("#btn-answer").click(function(event) {
         type = 'answer';
-        answer(false);
+        answer();
     });
 });
 
@@ -52,7 +52,8 @@ function save() {
             }
         });
     } else {
-        alert("不可空格");
+        //alert("不可空格");
+        read();
     }
 }
 
@@ -93,6 +94,7 @@ function answer(again) {
 }
 
 function again() {
+    console.log(type)
     if (type == 'read') {
         read(true);
     } else if (type == 'answer') {

@@ -1,5 +1,73 @@
+@media only screen and (max-width: 1080px)
+    .r_area
+        .hint
+            grid-template-columns: auto
+            grid-template-rows: auto
+            .left
+                justify-self: center
+            .right
+                justify-self: center
+
+@media only screen and (max-width: 870px)
+    // .r_area
+    //     .hint
+    //         p
+    //             font-size: 16px
+
 @media only screen and (max-width: 768px)
-    
+    .container-fluid
+        grid-template-columns: 35% 63%
+        
+    .intro
+        p
+            font-size: 16px
+        
+    .r_area
+        .hint
+            p
+                font-size: 16px
+
+        .btn_start
+            height: 60%
+            h3
+                font-size: 20px
+        
+    .q_card
+        width: 95vw
+        margin-left: 2.5%
+        .q_input
+            width: 80%
+                
+
+    .ans_card
+        .btn_answer
+            button
+                width: 80%
+                height: 80%
+                p
+                    font-size: 15px
 
 @media only screen and (max-width: 480px)
-    
+    body
+        background-position: left top
+        background-size: 284% 50%
+        background-attachment: scroll
+        width: 100vw
+    .container-fluid
+        grid-template-columns: auto
+        grid-template-rows: $height $height
+
+    .q_card
+        background-size: 500%
+        .title_card
+            h3
+                font-size: 60px
+        .q_input
+            width: 70%
+        .bottom_card
+            .btn_bottom
+                width: 45%
+                height: 40%
+                button
+                    p
+                        font-size: 16px

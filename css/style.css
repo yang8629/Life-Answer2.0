@@ -211,7 +211,7 @@ body {
 .container-fluid {
   display: grid;
   grid-template-columns: 44% 54%;
-  grid-template-rows: 760px;
+  grid-template-rows: 100vh;
   grid-column-gap: 2%;
   justify-content: space-between;
   align-items: center;
@@ -251,24 +251,34 @@ body {
   margin-left: -10px;
   width: 50%;
   height: 50%;
-  min-width: 225px;
-  min-height: 53px;
+  min-width: 150px;
+  min-height: 30px;
 }
 .r_area .hint {
   align-self: start;
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 31% 69%;
+  grid-template-rows: auto;
 }
-.r_area .hint img {
-  margin-top: 20px;
-  width: 70%;
-  height: 70%;
-  min-width: 270px;
-  min-height: 13px;
+.r_area .hint p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #335A63;
+}
+.r_area .hint .left {
+  justify-self: end;
+}
+.r_area .hint .right {
+  justify-self: start;
+  text-align: left;
 }
 .r_area .btn_start {
   width: 40%;
   height: 58px;
   min-width: 130px;
-  font-size: 25px;
   background-color: white;
   border: #dee2e6 1px solid;
   color: #335A63;
@@ -279,6 +289,7 @@ body {
   color: white;
 }
 .r_area .btn_start h3 {
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -293,8 +304,9 @@ body {
   background-position: -200px 0px;
   background-size: 340%;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   margin-left: 50%;
-  bottom: -800px;
+  bottom: -900px;
   overflow: hidden;
   transition: 0.5s cubic-bezier(0.6, 0, 0.3, 1);
   justify-items: center;
@@ -429,4 +441,82 @@ body {
 .ans_card .btn_answer button:hover {
   background-color: #335A63;
   color: white;
+}
+
+@media only screen and (max-width: 1080px) {
+  .r_area .hint {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .r_area .hint .left {
+    justify-self: center;
+  }
+  .r_area .hint .right {
+    justify-self: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    grid-template-columns: 35% 63%;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .r_area .hint p {
+    font-size: 16px;
+  }
+  .r_area .btn_start {
+    height: 60%;
+  }
+  .r_area .btn_start h3 {
+    font-size: 20px;
+  }
+
+  .q_card {
+    width: 95vw;
+    margin-left: 2.5%;
+  }
+  .q_card .q_input {
+    width: 80%;
+  }
+
+  .ans_card .btn_answer button {
+    width: 80%;
+    height: 80%;
+  }
+  .ans_card .btn_answer button p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    background-position: left top;
+    background-size: 284% 50%;
+    background-attachment: scroll;
+    width: 100vw;
+  }
+
+  .container-fluid {
+    grid-template-columns: auto;
+    grid-template-rows: 100vh 100vh;
+  }
+
+  .q_card {
+    background-size: 500%;
+  }
+  .q_card .title_card h3 {
+    font-size: 60px;
+  }
+  .q_card .q_input {
+    width: 70%;
+  }
+  .q_card .bottom_card .btn_bottom {
+    width: 45%;
+    height: 40%;
+  }
+  .q_card .bottom_card .btn_bottom button p {
+    font-size: 16px;
+  }
 }
