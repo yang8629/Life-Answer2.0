@@ -503,6 +503,10 @@ body {
     grid-template-rows: 100vh 100vh;
   }
 
+  .r_area .btn_start {
+    height: 70%;
+  }
+
   .q_card {
     background-size: 500%;
   }
